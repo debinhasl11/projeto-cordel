@@ -1,7 +1,13 @@
 @charset "UTC-8";
 @font-face {
-    font-family:;
-    src: url('');
+    font-family:'passi';
+    src: url('fontes/PassionOne-Regular.ttf') format('truetype');
+    font-weight: lighter;
+}
+@font-face {
+    font-family:'sri' ;
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+    font-weight: lighter;
 }
 *{
     margin: 0px;
@@ -10,6 +16,7 @@
 html, body {
     background-color: darkgray;   
     min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
     background-color: black;
@@ -20,6 +27,10 @@ header >h1 {
   padding: 50px;  
   /* text-transform: uppercase; Coloca em letra maiusculas*/
   font-display: small-caps;/*Coloca as primeiras em maiuculas*/
+  font-family: 'passi';
+  font-weight: lighter;
+  font-size: 10vw; /* colocar a fonte no tamanha da pagina(baseado na largura da tela)*/
+
 }
 header > p{
     padding-bottom: 50px;
@@ -36,6 +47,8 @@ section {
     padding: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    font-family:'sri';
+    font-size: 3.3vw;
 }
 section.normal{
     background-color: white;
@@ -48,7 +61,8 @@ section.imagem{
 section.imagem >p{
     background-color: rgba(0, 0, 0, 0.149);
     color: white;
-    height: 300px;
+    display: inline-block; /*transforma a caixa de acordo com tamanho da caixa*/
+    padding: 15px;
 }
 footer{
     background-color: black;
