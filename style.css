@@ -57,12 +57,24 @@ section.normal{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.663);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.764); /*box para dentro*/
+    background-size: cover; /*Coloca a imgaem de tamanho da tela ou melhor da pagina*/
+    background-attachment: fixed; /*Colocando a imagem para usar o efeito PARALLAX*/
 }
 section.imagem >p{
-    background-color: rgba(0, 0, 0, 0.149);
+    background-color: rgba(0, 0, 0, 0.397);
     color: white;
     display: inline-block; /*transforma a caixa de acordo com tamanho da caixa*/
     padding: 15px;
+    text-shadow: 1.1px 1.1px 3px black;
+}
+section#img1{
+    background-image: url('imagens/background001.jpg');
+    background-position:  right center;
+}
+section#img2 {
+    background-image: url('imagens/background002.jpg');
+    background-position:  right center;
 }
 footer{
     background-color: black;
