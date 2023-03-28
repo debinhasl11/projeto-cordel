@@ -7,3 +7,48 @@ html, body {
     background-color: darkgray;   
     min-height: 100vh;
 }
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header >h1 {
+  padding: 50px;  
+  /* text-transform: uppercase; Coloca em letra maiusculas*/
+  font-display: small-caps;/*Coloca as primeiras em maiuculas*/
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a,footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer a:hover, header a:hover{
+    text-decoration: underline;
+}
+section {
+    padding: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.663);
+    color: white;
+}
+section.imagem >p{
+    background-color: rgba(0, 0, 0, 0.149);
+    color: white;
+    height: 300px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
